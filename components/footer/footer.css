@@ -1,126 +1,116 @@
-.footerdiv{
-    height: 120px;
-    padding:2rem;
-    display:flex
+.footerdiv {
+  height: 120px;
+  padding: 2rem;
+  display: flex;
 }
-.footerMobile{
+.footerMobile {
+  display: none;
+  width: 100vw;
+  height: 150px;
+  background-color: #1c3564;
+  padding: 2rem;
+  color: white;
+}
+.footersubdiv {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  /* flex-direction: column; */
+  justify-content: space-around;
+}
+.socialdiv {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.footerimagesubdiv {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.footerimagesubdivempty {
+  width: 50%;
+  align-content: "center";
+  justify-content: "center";
+  display: inline;
+}
+.bgfooterheading {
+  margin-top: 3rem;
+  color: white;
+  font-family: Poppins;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+}
+.bgfooterpara {
+  margin-top: 1rem;
+  color: white;
+  font-size: 1.1rem;
+  font-style: normal;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+/* .footerbgimagesubdiv {
+  height: 55vh;
+} */
+@media screen and (max-width: 800px) {
+  .footerdiv {
+    height: 400px;
+    flex-direction: column;
+    padding: 1rem;
     display: none;
-    width: 100vw;
-    height: 150px;
-    background-color: #1C3564;
-    padding: 2rem;
-    color: white;
-    
-}
-.footersubdiv{
-    width:100%;
-    display:flex;
-    flex-direction: row-reverse;
-    /* flex-direction: column; */
+  }
+  .footersubdiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
-}
-.socialdiv{
-    display:flex;
-    width:50%;
+  }
+  .socialdiv {
+    display: flex;
+    width: 100%;
     justify-content: space-around;
-    align-items: center;
-    align-content: center;
-}
-.footerimagesubdiv{
-    width:50%;
-    display:flex;
+  }
+  .footerMobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerimagesubdiv {
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: white;
-}
-.footerimagesubdivempty{
-    width:50%;
-    align-content:"center";
-    justify-content:"center";
-    display: inline;
-}
-.bgfooterheading{
- 
-
-        margin-top: 3rem;
-        color: white;
-        font-family: Poppins;
-        font-size: 2.5rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 38px;
-     
-}
-.bgfooterpara{
-
-     margin-top: 1rem;
-     color: white;
-     font-size: 1.1rem;
-     font-style: normal;
-   
-}
-.footerbgimagesubdiv{
-    height: 55vh;
-}
-@media screen and (max-width: 800px) {
-    .footerdiv {
-      height: 400px;
-      flex-direction: column;
-      padding:1rem;
-      display: none;
-    }
-    .footersubdiv{
-        width:100%;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .socialdiv{
-        display:flex;
-        width:100%;
-        justify-content: space-around;
-    }
-    .footerMobile{
-        display: flex;
-        flex-direction: column;
-    }
-    .footerimagesubdiv{
-        width:100%;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        color: white;
-    }
-    .footerimagesubdivempty{
-        width:50%;
-        align-content:"center";
-        justify-content:"center";
-        display: none;
-    }
-    .bgfooterheading{
- 
-
-        margin-top: 3rem;
-        color: white;
-        font-family: Poppins;
-        font-size: 1.5rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 38px;
-     
-    }
-    .bgfooterpara{
-
-        margin-top: 1rem;
-        color: white;
-        font-size: 1rem;
-        font-style: normal;
-    
-    }
-    .footerbgimagesubdiv{
-        height: 80vh;
-    }
-   
   }
+  .footerimagesubdivempty {
+    width: 50%;
+    align-content: "center";
+    justify-content: "center";
+    display: none;
+  }
+  .bgfooterheading {
+    margin-top: 3rem;
+    color: white;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+  }
+  .bgfooterpara {
+    margin-top: 1rem;
+    color: white;
+    font-size: 1rem;
+    font-style: normal;
+  }
+  /* .footerbgimagesubdiv {
+    height: 80vh;
+  } */
+}
